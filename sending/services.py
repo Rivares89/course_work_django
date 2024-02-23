@@ -3,7 +3,7 @@ import pytz
 from django.core.cache import cache
 from django.core.mail import send_mail
 from django.conf import settings
-from sheduler.models import Mail, Logs
+from sending.models import Mail, Logs
 
 
 def my_job():

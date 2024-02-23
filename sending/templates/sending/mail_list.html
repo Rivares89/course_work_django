@@ -1,10 +1,10 @@
-{% extends 'sheduler/base.html' %}
+{% extends 'sending/base.html' %}
 {% block content %}
 <div class="header mx-auto text-center">
     <h5 class="display-4">{{ title }}</h5>
 </div>
 <div class="col-12 mb-5">
-    <a class="btn btn-outline-primary" href="{% url 'sheduler:mail_add' %}">Создать рассылку</a>
+    <a class="btn btn-outline-primary" href="{% url 'sending:mail_add' %}">Создать рассылку</a>
 </div>
 <div class="col-12">
     <div class="row">
@@ -20,7 +20,7 @@
                         <p>с {{ object.start_date }} по {{ object.end_date }}</p>
                         <p>с периодичностью {{ object.interval }}</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <a href="{% url 'sheduler:mail_view' object.pk %}" type="button"
+                            <a href="{% url 'sending:mail_view' object.pk %}" type="button"
                                class="btn btn-sm btn-outline-primary">Подробнее</a>
 
                         </div>

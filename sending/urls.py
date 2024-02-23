@@ -1,11 +1,11 @@
 from django.urls import path
-from sheduler.apps import ShedulerConfig
-from sheduler.views import MessageListView, MessageCreateView, MessageUpdateView, \
+from sending.apps import SendingConfig
+from sending.views import MessageListView, MessageCreateView, MessageUpdateView, \
     MessageDetailView, MessageDeleteView, MailCreateView, MailUpdateView, MailDeleteView, MailListView, \
     MailDetailView, ClientListView, ClientCreateView, ClientUpdateView, MailUpdateModeratorView, \
     HomeView
 
-app_name = ShedulerConfig.name
+app_name = SendingConfig.name
 
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),

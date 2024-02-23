@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import DateTimeInput
 
-from sheduler.models import Mail, Message, Client
+from sending.models import Mail, Message, Client
 
 
 class StyleFormMixin:
